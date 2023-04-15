@@ -1,5 +1,0 @@
-{
-    "sketch": "BluetoothPriceModule.ino",
-    "output": "build",
-    "board": "arduino:avr:uno"
-}
