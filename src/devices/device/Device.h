@@ -1,6 +1,7 @@
 #if !defined(DEVICE_H)
 #define DEVICE_H
 
+#include <Arduino.h>
 #include "DeviceFunction.h"
 
 class Device{
