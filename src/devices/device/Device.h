@@ -7,7 +7,7 @@
 class Device{
     
     public:
-        enum class Status {
+        enum class State {
             Default
         };
         
@@ -15,13 +15,16 @@ class Device{
     
     protected:
         DeviceFunction function;
-        Status status;
+        State status;
     
     public:
         Device();
         
-        void SetStatus(Status);
-        Status getStatus();
+        virtual void executeFunction(DeviceFunction::Name);
+        virtual void onState(State);
+        
+        void SetStatus(State);
+        State getStatus();
         
 
 };
